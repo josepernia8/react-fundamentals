@@ -14,3 +14,19 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+<html>
+  <body>
+    <script type="module">
+      // your JavaScript here
+      // Creating root element
+      let root = document.createElement('div')
+      root.setAttribute('id', 'root')
+      document.getElementsByTagName('body')[0].append(root)
+
+      /// Creating dic with hello world text
+      let element = document.createElement('div')
+      element.textContent = 'Hello World!'
+      document.getElementById('root').append(element)
+    </script>
+  </body>
+</html>
